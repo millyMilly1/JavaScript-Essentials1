@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <input id="myId" type="text"></input>
+  <button onClick="window.confirm(document.getElementById('myId').value)">Get Text</button>
+  <script> 
+    let name = window.prompt("What is your name?");
+    name = name ? name : "anonymous";
+    let age = window.prompt("Hello " + name + ", how old are you?");
+    let user = name.toUpperCase();
+    if (isNaN(age)){
+    alert("please in put a valid number!");
+}else{    
+    alert(user + " is " + age + " years old");
+}
+
+let width = window.prompt("please enter a width");
+let height = window.prompt("please enter a height");
+let length = window.prompt("please enter a length");
+
+if (isNaN(width)){
+   alert("please input a valid width");
+}
+else if(isNaN(height)){
+    alert("please input avalid height");
+}
+else if(isNaN(length)){
+    alert("please input a valid length");
+}
+else{
+    alert(width * height * length);
+}
+  </script>
+</body>
+</html>

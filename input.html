@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+     <head></head>
+     <body>
+      <input id="myId" type="text"></input>
+      <button onClick="window.alert(document.getElementById('myId').value)">Get Text</button>
+	<script>
+let num1 = prompt("input first number");
+let operation = prompt("input a sign");
+let num2 = prompt("input second number");
+
+if(isNaN(num1)){
+    alert("please input a valid number");
+ if(operation !== "+" || operation !== "-" || operation !== "*" || operation !== "/"){
+    alert("please input a valid sign");
+    if(isNaN(num2)){
+        alert("please input a valid number");
+    }
+}
+}
+num1 = parseFloat(num1);
+num2 = parseFloat(num2);
+
+let result;
+ if(operation === "+" ){
+     result = num1 + num2;
+ }
+else if(operation === "-" ){
+    result = num1 - num2;
+}
+else if(operation === "*" ){
+    result = num1 * num2;
+}
+else if(operation === "/" ){
+    result = num1 / num2;
+}
+else{
+    console.log("this would never return");
+}
+
+alert("here is your result: " + result);
+alert("please start the program again");
+	</script>
+     </body>
+</html>

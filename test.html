@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+     <head></head>
+     <body>
+	<script>
+let catalog = [];
+
+while(true){
+    let movie = prompt("what is the name of the first movie");
+        if(movie === null){
+            break;
+        }
+    let ibmdrating = Number(prompt("please input a rating"));
+        if(ibmdrating === null){
+            break;
+        }
+    let folder = {
+        title : movie,
+        rating : ibmdrating
+    }
+
+    catalog.push(folder);
+
+
+}
+//console.log(catalog);
+
+console.log("movies with rating lower or equals top 7");
+for (let i = 0; i < catalog.length; i++){
+    if (catalog[i].rating <= 7){
+        console.log(catalog[i].title + ": " + catalog[i].rating)
+    }
+}
+
+console.log("movies with rating higher or equals to 8");
+for (let i = 0; i < catalog.length; i++){
+    if (catalog[i].rating >= 8){
+        console.log(catalog[i].title + ": " + catalog[i].rating);
+    }
+}
+	</script>
+     </body>
+</html>
