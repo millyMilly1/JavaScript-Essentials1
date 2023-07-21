@@ -1,3 +1,5 @@
+//objects tutorial.
+
 let trainTickets = {
     startStation: "oja trainstop",
     endStation: "araromi",

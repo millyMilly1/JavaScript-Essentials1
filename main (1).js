@@ -53,5 +53,4 @@ let libary = [
     console.log(`here are the title of the books left: \n ${libary[0].title} \n ${libary[1].title} \n ${libary[2].title}`);
     
     let totalPages = libary[0].pages + libary[1].pages + libary[2].pages;
-    
     console.log(totalPages);
