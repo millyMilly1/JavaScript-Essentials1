@@ -49,6 +49,7 @@ let libary = [
     console.log(`the title of the fourth book is ${libary[3].title}`);
     
     libary.shift();
+    
     console.log(libary.length);
     console.log(`here are the title of the books left: \n ${libary[0].title} \n ${libary[1].title} \n ${libary[2].title}`);
     

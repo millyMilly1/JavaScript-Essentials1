@@ -14,6 +14,7 @@ for (let city of cities) {
 }
 console.log(typeof sum);
 console.log(sum)
+
 let neww = sum.toString();
 console.log(typeof neww);
 console.log(neww);

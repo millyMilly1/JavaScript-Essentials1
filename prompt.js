@@ -13,12 +13,15 @@ let length = window.prompt("please enter a length", 0);
 if (isNaN(width)){
    alert("please input a valid width");
 }
+
 else if(isNaN(height)){
     alert("please input avalid height");
 }
+
 else if(isNaN(length)){
     alert("please input a valid length");
 }
+
 else{
     alert("this is the volume of the box: " + width * height * length);
 }
